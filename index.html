@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BySkaryTime - Проверка на читы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1a2e;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 600px;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #ffd700;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .features {
+            text-align: left;
+            background: #16213e;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .features h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .feature-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #2a2a4a;
+            font-size: 14px;
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #e94560;
+            color: #ffffff;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .download-btn:hover {
+            background: #ff6b6b;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.5);
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #666666;
+            font-size: 12px;
+        }
+
+        .steps {
+            background: #16213e;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .steps h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .step {
+            padding: 10px 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #e94560;
+            color: #ffffff;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 25px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 36px;
+            }
+            .download-btn {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🔥</div>
+        <h1>BySkaryTime</h1>
+        <p class="subtitle">Проверка компьютера на читы</p>
+        
+        <p class="description">
+            Профессиональный инструмент для проверки компьютера на сторонние программные обеспечения.
+            Защити свой сервер от читеров!
+        </p>
+
+        <div class="features">
+            <h2>⚡ Возможности</h2>
+            <div class="feature-item">🔍 Проверка запущенных процессов</div>
+            <div class="feature-item">🚀 Проверка автозагрузки</div>
+            <div class="feature-item">🎮 Проверка файлов Minecraft</div>
+            <div class="feature-item">🌐 Проверка браузеров</div>
+            <div class="feature-item">💾 Проверка USB-накопителей</div>
+            <div class="feature-item">📸 Скриншот при нахождении</div>
+            <div class="feature-item">📤 Отправка в Discord</div>
+        </div>
+
+        <div class="steps">
+            <h2>📋 Как пользоваться</h2>
+            <div class="step">
+                <span class="step-number">1</span>
+                Скачайте программу
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                Запустите anti_cheat.exe
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                Получите ключ в Discord: /key
+            </div>
+            <div class="step">
+                <span class="step-number">4</span>
+                Введите ключ и ник
+            </div>
+            <div class="step">
+                <span class="step-number">5</span>
+                Нажмите "Проверить компьютер"
+            </div>
+        </div>
+
+        <a href="anti_cheat.exe" class="download-btn" download>
+            ⬇️ СКАЧАТЬ ПРОГРАММУ
+        </a>
+
+        <div class="footer">
+            <p>© 2024 BySkaryTime | Программу создал aleks.6666</p>
+        </div>
+    </div>
+</body>
+</html>
