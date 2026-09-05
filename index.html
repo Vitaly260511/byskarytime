@@ -5,206 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BySkaryTime - Проверка на читы</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
+            background: #0a0a0a;
+            color: #fff;
             font-family: 'Arial', sans-serif;
-            background: #1a1a2e;
-            color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
+            margin: 0;
+            padding: 20px;
             text-align: center;
-            padding: 40px;
-            max-width: 600px;
-        }
-
-        .logo {
-            font-size: 60px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
         }
 
         h1 {
-            font-size: 48px;
-            color: #e94560;
-            margin-bottom: 10px;
+            color: #ff4444;
+            font-size: 40px;
+            margin: 50px 0 10px;
         }
 
         .subtitle {
-            font-size: 20px;
             color: #ffd700;
-            margin-bottom: 30px;
+            font-size: 18px;
+            margin-bottom: 50px;
         }
 
-        .description {
-            font-size: 16px;
-            color: #cccccc;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-
-        .features {
-            text-align: left;
-            background: #16213e;
-            border-radius: 15px;
+        .box {
+            background: #111;
+            border: 2px solid #333;
+            border-radius: 10px;
             padding: 30px;
-            margin-bottom: 40px;
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: left;
         }
 
-        .features h2 {
-            color: #ffd700;
-            margin-bottom: 20px;
+        .box h2 {
+            color: #ff4444;
             text-align: center;
+            margin-bottom: 20px;
         }
 
-        .feature-item {
+        .box li {
+            list-style: none;
             padding: 10px 0;
-            border-bottom: 1px solid #2a2a4a;
-            font-size: 14px;
+            border-bottom: 1px solid #222;
         }
 
-        .feature-item:last-child {
+        .box li:last-child {
             border-bottom: none;
         }
 
-        .download-btn {
-            display: inline-block;
-            background: #e94560;
-            color: #ffffff;
-            padding: 20px 40px;
+        .download {
+            background: #ff4444;
+            color: #fff;
+            padding: 20px 50px;
             font-size: 20px;
             font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s;
-            cursor: pointer;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 30px 0;
         }
 
-        .download-btn:hover {
-            background: #ff6b6b;
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.5);
+        .download:hover {
+            background: #cc0000;
         }
 
         .footer {
-            margin-top: 40px;
-            color: #666666;
+            color: #555;
+            margin-top: 50px;
             font-size: 12px;
-        }
-
-        .steps {
-            background: #16213e;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 40px;
-            text-align: left;
-        }
-
-        .steps h2 {
-            color: #ffd700;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .step {
-            padding: 10px 0;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .step-number {
-            display: inline-block;
-            background: #e94560;
-            color: #ffffff;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 25px;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 36px;
-            }
-            .download-btn {
-                padding: 15px 30px;
-                font-size: 16px;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">🔥</div>
-        <h1>BySkaryTime</h1>
-        <p class="subtitle">Проверка компьютера на читы</p>
-        
-        <p class="description">
-            Профессиональный инструмент для проверки компьютера на сторонние программные обеспечения.
-            Защити свой сервер от читеров!
-        </p>
 
-        <div class="features">
-            <h2>⚡ Возможности</h2>
-            <div class="feature-item">🔍 Проверка запущенных процессов</div>
-            <div class="feature-item">🚀 Проверка автозагрузки</div>
-            <div class="feature-item">🎮 Проверка файлов Minecraft</div>
-            <div class="feature-item">🌐 Проверка браузеров</div>
-            <div class="feature-item">💾 Проверка USB-накопителей</div>
-            <div class="feature-item">📸 Скриншот при нахождении</div>
-            <div class="feature-item">📤 Отправка в Discord</div>
-        </div>
+    <h1>BySkaryTime</h1>
+    <p class="subtitle">Проверка компьютера на читы</p>
 
-        <div class="steps">
-            <h2>📋 Как пользоваться</h2>
-            <div class="step">
-                <span class="step-number">1</span>
-                Скачайте программу
-            </div>
-            <div class="step">
-                <span class="step-number">2</span>
-                Запустите anti_cheat.exe
-            </div>
-            <div class="step">
-                <span class="step-number">3</span>
-                Получите ключ в Discord: /key
-            </div>
-            <div class="step">
-                <span class="step-number">4</span>
-                Введите ключ и ник
-            </div>
-            <div class="step">
-                <span class="step-number">5</span>
-                Нажмите "Проверить компьютер"
-            </div>
-        </div>
-
-        <a href="anti_cheat.exe" class="download-btn" download>
-            ⬇️ СКАЧАТЬ ПРОГРАММУ
-        </a>
-
-        <div class="footer">
-            <p>© 2024 BySkaryTime | Программу создал aleks.6666</p>
-        </div>
+    <div class="box">
+        <h2>Что проверяет</h2>
+        <li>Запущенные процессы</li>
+        <li>Автозагрузку</li>
+        <li>Файлы Minecraft</li>
+        <li>Браузеры</li>
+        <li>USB-накопители</li>
     </div>
+
+    <div class="box">
+        <h2>Как пройти проверку</h2>
+        <li>1. Скачай программу</li>
+        <li>2. Запусти</li>
+        <li>3. Получи ключ в Discord: /key</li>
+        <li>4. Введи ключ и ник</li>
+        <li>5. Жди результат</li>
+    </div>
+
+    <a href="anti_cheat.exe" class="download">СКАЧАТЬ</a>
+
+    <div class="footer">
+        BySkaryTime | aleks.6666
+    </div>
+
 </body>
 </html>
